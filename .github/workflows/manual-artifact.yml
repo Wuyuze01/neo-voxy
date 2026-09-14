@@ -23,8 +23,7 @@ jobs:
           cache-cleanup: always
 
       - name: Gradle build
-        run: ./gradlew build
-
+        run: ./gradlew :editions:forge-1.20.1-client:build
       - name: Upload artifact
         uses: actions/upload-artifact@v7
         with:
