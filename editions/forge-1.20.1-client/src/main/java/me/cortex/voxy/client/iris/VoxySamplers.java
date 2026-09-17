@@ -34,7 +34,7 @@ public class VoxySamplers {
                     return 0;
                 }
                 return dt.id;
-            }, new GlSampler(false, true, false, false), opaqueNames);
+            }, new GlSampler(false, false, false, false), opaqueNames);
 
             samplers.addDynamicSampler(TextureType.TEXTURE_2D, () -> {
                 var pipeData = ((IGetIrisVoxyPipelineData)pipeline).voxy$getPipelineData();
@@ -50,6 +50,6 @@ public class VoxySamplers {
                     return 0;
                 }
                 return dt.id;
-            }, new GlSampler(false, true, false, false), translucentNames);
+            }, new GlSampler(false, false, false, false), translucentNames);
     }
 }
